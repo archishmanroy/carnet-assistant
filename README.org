@@ -1,0 +1,41 @@
+* Make pdfs: carnet.pdf, antrag.pdf, images.pdf
+
+1. Add credentials to /creds/
+  - service-account-key.json
+  - spreadsheet.key
+  
+2. Add pdf templates to /templates/
+  - carnet-blank.pdf [update address!]
+  - antrag-blank.pdf [update address & bank details!]
+  - extra-front.pdf
+  - extra-back.pdf
+  
+3. Add images to /images/<SHEET_NAME>
+  - e.g. /images/main
+  - e.g. /images/batteries
+  
+4. Run script (--base is path to Carnet-Assistant)
+  - python Carnet-Assistant.py --base $PWD --sheet main
+  - --base is path to Carnet-Assistant root directory
+  - --sheet is the name of the sheet containing the final list
+  - check output pdfs in /output/ (copy automatically put in /output/archive)
+  - python Carnet-Assistant.py --base $PWD --sheet batteries
+  
+* Printing
+  - Vollmacht
+  - Unterschriftsprobe
+  - Two copies of ANTRAG (for IHK (red form) and NEXT (black form))
+      Pages 1&2 on Antrag form, Pages 3+ (item 10+) on white additional pages
+  - One copy of GREEN CARNET
+      Pages 1&2 on green front page, pages 3+ (item 10+) on green additional pages
+  - Two copies of YELLOW CARNET
+      Pages 1&2 on yellow front page, pages 3+ (item 10+) on yellow additional pages
+  - Two copies of WHITE CARNET
+      Pages 1&2 on white front page, pages 3+ (item 10+) on white additional pages
+  - Seven copies of IMAGES on plain white paper (double-sided ok)
+  
+* Get lehrstuhl signatures
+  - ANTRAGS and GREEN CARNET signed in HOLDER box
+  - VOLLMACHT and UNTERSCHRIFTSPROBE
+  
+  

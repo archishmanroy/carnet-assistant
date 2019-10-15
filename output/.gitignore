@@ -1,0 +1,27 @@
+# Ignore contents of directories containing pdfs
+.pages/*
+archive/*
+!.pages/.gitignore
+!archive/.gitignore
+
+# Generic files to ignore
+*.aux
+*.bcf
+*.bbl
+*-blx.bib
+*.blg
+.*.lb
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.pdf
+*.out
+*.run.xml
+*.spl
+*.synctex.gz
+*.toc
+*~
+*#
+*.nfs*
